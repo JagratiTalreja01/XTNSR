@@ -1,0 +1,63 @@
+Pseudo-code for xception-based transformer
+network (XTNSR)
+The following is a pseudo-code for the suggested method,
+which combines Local Feature Window Transformer Blocks
+(LFWT) and Multi-Layer Feature Fusion Blocks (MLFF)
+with Transformer and Xception blocks in a multi-path network.
+# Function Definitions for Various Components
+Function XceptionBlock(Input):
+# Apply depthwise separable convolutions followed by pointwise convolution
+DWConv1 = DepthwiseConvolution(Input)
+Conv1 = PointwiseConvolution(DWConv1)
+Output1 = ReLU(Conv1)
+DWConv2 = DepthwiseConvolution(Input)
+Conv2 = PointwiseConvolution(DWConv2)
+Output2 = ReLU(Conv2)
+Return Output1 + Output2
+Function LocalFeatureWindowTransformerBlock(Input):
+# Apply Layer Normalization and Shifted Window MultiHead Self-Attention
+LN = LayerNormalization(Input)
+SW_MSA = ShiftedWindowMultiHeadSelfAttention(LN)
+Out = SW_MAS + Input LN = LayerNormalization(Out)
+MLP = MultiLayerPerceptron(LN)
+Output = MLP + Out
+Return Output
+Function MultiLayerFeatureFusion(X, LFWT):
+# Fuse features from Xception and LFWT outputs
+Concatenated = Concatenate(A1,A2, A3, A4, A5)
+Fused = FullyConnectedLayer(Concatenated)
+DWConv = DepthwiseConvolution(Fused)
+Concat = Concatenate(DWConv, ReLU(DWConv))
+Fused = FullyConnectedLayer(Concat)
+
+Return Fused
+Function XTNSRModel(LRImage):
+# Initial Patch Embedding
+Patched = PatchEmbedding(LRImage)
+# Feature extraction
+LFWT1 = LocalFeatureWindowTransformerBlock
+(Patched)
+X1 = XceptionBlock(LFWT1)
+LFWT2 = LocalFeatureWindowTransformerBlock(X1)
+X2 = XceptionBlock(LFWT2)
+LFWT3 = LocalFeatureWindowTransformerBlock(X2)
+LFWT4 = LocalFeatureWindowTransformerBlock
+(LWFT3)
+X3 = XceptionBlock(LFWT4)
+LFWT5 = LocalFeatureWindowTransformerBlock(X3)
+X4 = XceptionBlock(LFWT5)
+# Multi-Layer Feature Fusion and Final Output
+MLFFOutput = MultiLayerFeatureFusion(LFWT1,
+LFWT2, LFWT3, LFWT4, LFWT5)
+HR = Deconvolution(MLFFOutput) # Upscale to highresolution
+Return HR
+# Main Execution Function
+Function Main():
+# Load Low-Resolution Image
+LRImage = LoadImage("LowResolutionInput.jpg")
+# Generate High-Resolution Image
+HRImage = XTNSRModel(LRImage)
+# Save the High-Resolution Image
+SaveImage(HRImage, "HighResolutionOutput.jpg")
+# Run the main function
+Main()
