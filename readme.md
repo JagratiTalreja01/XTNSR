@@ -81,11 +81,15 @@ Cd to 'src', run the following scripts.
 ## Results
 ### Visual Patches
 
-![Urban100x4](./Figures/Urbanx4.PNG)
+![BSD100x4](./Figures/BSDx4.PNG)
+
+![Manga109x4](./Figures/Mangax4.PNG)
+
+![Set14x8](./Figures/Set14x8.PNG)
 
 ![BSD100x8](./Figures/BSDx8.PNG)
 
-![Urnan100x8](./Figures/Urbanx8.PNG)
+![Urban100x8](./Figures/Urbanx8.PNG)
 
 ![Manga109x8](./Figures/Mangax8.PNG)
 
@@ -95,13 +99,7 @@ Cd to 'src', run the following scripts.
 
 ![Execution Time](./Figures/Execution_Time.PNG)
 
-![Space Complexity](./Figures/Space_complexity.PNG)
-
-![Time Complexity](./Figures/Time_complexity.PNG)
-
-![Multi-Adds](./Figures/Multi-Addds.PNG)
-
-![PSNR Convergence](./Figures/Convergence.PNG)
+![Flops](./Figures/Flops.PNG)
 
 For more Quantitative Results please read the paper [[Link]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10648606&tag=1)
 
