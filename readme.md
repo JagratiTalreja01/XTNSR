@@ -1,11 +1,11 @@
-# DHTCUN
-# Deep Hybrid Transformer CNN U Network for Single Image Super Resolution
-This repository is for DHTCUN introduced in the following paper "Deep Hybrid Transformer CNN U Network for Single Image Super Resolution", IEEE Access, [[Link]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10648606&tag=1) 
+# XTNSR
+# Xception Based Transformer Network for Single Image Super Resolution
+This repository is for DHTCUN introduced in the following paper "Xception Based Transformer Network for Single Image Super Resolution", Springer Complex & Intelligent Systems, [[Link]](https://link.springer.com/article/10.1007/s40747-024-01760-1) 
 
 
-The code is built on [HNCT (PyTorch)](https://github.com/lhjthp/HNCT) and tested on Ubuntu 18.04 environment (Python3.6, PyTorch >= 1.1.0) with NVIDIA GeForce GTX 2080ti GPU. 
+The code is built on [SRFormer (PyTorch)](https://github.com/HVision-NKU/SRFormer) and tested on Ubuntu 18.04 environment (Python3.6, PyTorch >= 1.7.0) with NVIDIA GeForce GTX 2080ti GPU. 
 ## Contents
-1. [Introduction](#introduction)
+1. [Method Overview](#methodoverview)
 2. [Dependencies](#dependencies)
 3. [Train](#train)
 4. [Test](#test)
@@ -13,24 +13,24 @@ The code is built on [HNCT (PyTorch)](https://github.com/lhjthp/HNCT) and tested
 6. [Citation](#citation)
 7. [Acknowledgements](#acknowledgements)
 
-## Introduction
+## Method Overview
 
-This repository contains the implementation of DHTCUN, a cutting-edge hybrid model combining Convolutional Neural Networks (CNNs) and Transformers for Single-Image Super-Resolution (SISR). The architecture features a U-shaped design with Parallel Hybrid Transformer CNN Blocks (PHTCB) and Triple Enhanced Spatial Attention (TESA) mechanisms to achieve superior high-resolution image reconstruction.
+This repository contains the implementation of XTNSR, a novel hybrid model that combines Local Feature Window Transformers (LFWT) with Xception blocks for Single-Image Super-Resolution (SISR). XTNSR is designed to enhance high-resolution image reconstruction while addressing challenges like computational complexity, grid-like patch processing, and over-smoothing.
 
-![DHTCUN](./Figures/DHTCUN_architecture.PNG)
-
-![PHTCB (Parallel Hybrid Transformer CNN Block)](./Figures/PHTCB_structure.PNG)
+![XTNSR](./Figures/XTNSR_architecture.PNG)
 
 
-Key Highlights:
+Key Features:
 
-Parallel Hybrid Design: Combines CNNs and Transformers for long-range dependencies and noise reduction.
+Patch Embedding Layer: Efficiently processes grid-like image patches and reduces model complexity.
 
-Triple Enhanced Spatial Attention: Focuses on critical image features while suppressing noise.
+Local Feature Window Transformers (LFWT): Captures both local and global image features for better spatial representation.
 
-Computational Efficiency: Optimized with skip connections and pixel shuffle for reduced complexity.
+Xception Blocks: Extracts hierarchical features while reducing noise and computational demands.
 
-DHTCUN significantly improves PSNR and SSIM scores across benchmark datasets while maintaining computational efficiency, making it ideal for applications like medical imaging, satellite imagery, and surveillance.
+Multi-Layer Feature Fusion (MLFF): Merges features from multiple paths to ensure efficient image reconstruction.
+
+XTNSR achieves superior performance in PSNR, SSIM, and visual quality compared to state-of-the-art methods, making it highly applicable in fields like medical imaging, surveillance, and multimedia.
 
 Deep Hybrid Transformer CNN U Network for Single Image Super Resolution.
 
