@@ -75,7 +75,7 @@ Cd to 'src', run the following scripts.
     ```bash
     
     # Example X2 SR
-    python main.py --dir_data ../../ --model dhtcun  --chunk_size 144 --data_test Set5+Set14+B100+Urban100+Manga109 --n_hashes 4 --chop --save_results --rgb_range 1 --data_range 801-900 --scale 2 --n_feats 256 --n_resblocks 32 --res_scale 0.1  --pre_train model_x2.pt --test_only 
+    python main.py --dir_data ../../ --model xtnsr  --chunk_size 144 --data_test Set5+Set14+B100+Urban100+Manga109 --n_hashes 4 --chop --save_results --rgb_range 1 --data_range 801-900 --scale 2 --n_feats 256 --n_resblocks 32 --res_scale 0.1  --pre_train model_x2.pt --test_only 
     ```
 
 ## Results
@@ -106,16 +106,7 @@ For more Quantitative Results please read the paper [[Link]](https://ieeexplore.
 ## Citation
 If you find the code helpful in your research or work, please cite the following papers.
 ```
-@ARTICLE{10648606,
-  author={Talreja, Jagrati and Aramvith, Supavadee and Onoye, Takao},
-  journal={IEEE Access}, 
-  title={DHTCUN: Deep Hybrid Transformer CNN U Network for Single-Image Super-Resolution}, 
-  year={2024},
-  volume={12},
-  number={},
-  pages={122624-122641},
-  keywords={Transformers;Superresolution;Convolutional neural networks;Noise measurement;Computational modeling;Noise measurement;Image reconstruction;CNN;enhanced spatial attention;single-image super-resolution;Transformer},
-  doi={10.1109/ACCESS.2024.3450300}}
+@ARTICLE{Talreja, J., Aramvith, S. & Onoye, T. XTNSR: Xception-based transformer network for single image super resolution. Complex Intell. Syst. 11, 162 (2025). https://doi.org/10.1007/s40747-024-01760-1}
 
 ```
 
