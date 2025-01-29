@@ -101,7 +101,7 @@ Cd to 'src', run the following scripts.
 
 ![Flops](./Figures/Flops.PNG)
 
-For more Quantitative Results please read the paper [[Link]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10648606&tag=1)
+For more Quantitative Results please read the paper [[Link]](https://link.springer.com/article/10.1007/s40747-024-01760-1#citeas)
 
 ## Citation
 If you find the code helpful in your research or work, please cite the following papers.
