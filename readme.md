@@ -106,7 +106,7 @@ For more Quantitative Results please read the paper [[Link]](https://link.spring
 ## Citation
 If you find the code helpful in your research or work, please cite the following papers.
 ```
-@ARTICLE{Talreja, J., Aramvith, S. & Onoye, T. XTNSR: Xception-based transformer network for single image super resolution. Complex Intell. Syst. 11, 162 (2025). https://doi.org/10.1007/s40747-024-01760-1}
+Talreja, J., Aramvith, S. & Onoye, T. XTNSR: Xception-based transformer network for single image super resolution. Complex Intell. Syst. 11, 162 (2025). https://doi.org/10.1007/s40747-024-01760-1
 
 ```
 
