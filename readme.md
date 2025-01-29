@@ -51,7 +51,7 @@ Deep Hybrid Transformer CNN U Network for Single Image Super Resolution.
 
 2. Specify '--dir_data' based on the HR and LR images path. 
 
-For more information, please refer to [HNCT(PyTorch)](https://github.com/lhjthp/HNCT).
+For more information, please refer to [SRFormer(PyTorch)](https://github.com/HVision-NKU/SRFormer).
 
 ### Begin to train
 
