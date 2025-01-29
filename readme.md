@@ -111,6 +111,6 @@ If you find the code helpful in your research or work, please cite the following
 ```
 
 ## Acknowledgements
-This code is built on [HNCT (PyTorch)](https://github.com/lhjthp/HNCT/tree/main) and [EDSR-PyTorch](https://github.com/thstkdgus35/EDSR-PyTorch). We thank the authors for sharing their codes.
+This code is built on [SRFormer (PyTorch)](https://github.com/HVision-NKU/SRFormer) and [Swin IR-PyTorch](https://github.com/JingyunLiang/SwinIR). We thank the authors for sharing their codes.
 
 
