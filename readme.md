@@ -17,7 +17,7 @@ The code is built on [SRFormer (PyTorch)](https://github.com/HVision-NKU/SRForme
 
 This repository contains the implementation of XTNSR, a novel hybrid model that combines Local Feature Window Transformers (LFWT) with Xception blocks for Single-Image Super-Resolution (SISR). XTNSR is designed to enhance high-resolution image reconstruction while addressing challenges like computational complexity, grid-like patch processing, and over-smoothing.
 
-![XTNSR](./Figures/XTNSR_architecture.PNG)
+![XTNSR](./Figures/XNTSR_architecture.PNG)
 
 
 Key Features:
